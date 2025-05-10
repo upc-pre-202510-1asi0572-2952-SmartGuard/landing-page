@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartGuard </title>
+
+  <!-- Preconexiones a Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Fuente "Mulish" -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Íconos Material Icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEJr3t7f9V7NdrA7VvNfP8vM5uPdhH9eBG7G6Klj0lR1MO6VQv31kWqsX5v6p" crossorigin="anonymous">
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="global.css">
+
+  <!-- Hojas de estilo -->
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+<header class="header">
+  <div class="header__logo">
+    <img src="img/logo.png" alt="Logo FACELOCK">
+    <div class="logo-text">
+      <span class="white-text">FACE</span>
+      <span class="white-text">LOCK</span>
+    </div>
+  </div>
+
+  <!-- Menú de navegación -->
+  <nav class="header__nav">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#planes">Planes</a></li>
+      <li><a href="#testimonios">Testimonios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- Icono del menú hamburguesa -->
+  <div class="hamburger-menu" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('.header__nav ul');
+    nav.classList.toggle('open');
+  }
+</script>
+
+
+<section id="inicio" class="section__inicio">
+  <div class="inicio__content">
+    <h1>Bienvenido a FaceLoock</h1>
+    <p>La solución innovadora para acceder a tu hogar de manera segura y sin contacto, utilizando tecnología de reconocimiento facial.</p>
+
+    <!-- Botones para descargar la app -->
+    <div class="inicio__botones">
+      <a href="#" class="btn__descarga android">
+        <img src="img/android.png" alt="Descargar para Android">
+        Descargar para Android
+      </a>
+      <a href="#" class="btn__descarga ios">
+        <img src="img/app-store.png" alt="Descargar para iOS">
+        Descargar para iOS
+      </a>
+      <!-- Enlace para la web -->
+      <a href="https://www.face-loock.com" class="btn__web">
+        Visitar la Web
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="nosotros" class="section__nosotros">
+  <h2>Sobre Nosotros</h2>
+  <p class="section__descripcion">SmartGuard es una startup innovadora dedicada a crear soluciones de seguridad inteligente mediante tecnología avanzada, proporcionando una forma moderna y segura de acceder a tu hogar.</p>
+
+  <div class="nosotros__grid">
+
+    <!-- Imágenes del lado izquierdo -->
+    <div class="nosotros__imagenes">
+      <img src="img/nosotros-img2.jpg" alt="Equipo SmartGuard" class="nosotros__imagen">
+      <img src="img/nosotros-img1.jpg" alt="Tecnología de Reconocimiento Facial" class="nosotros__imagen">
+    </div>
+
+    <!-- Texto del lado derecho -->
+    <div class="nosotros__texto">
+      <h3>Nuestra Historia</h3>
+      <p>SmartGuard nació con el objetivo de transformar la seguridad residencial, utilizando tecnología de reconocimiento facial avanzada para proporcionar acceso sin contacto a los hogares. Fundada por un grupo de estudiantes comprometidos con la innovación y la seguridad, SmartGuard busca ofrecer soluciones accesibles, seguras y fáciles de usar.</p>
+
+      <h3>Nuestra Misión</h3>
+      <p>Brindar a los propietarios de viviendas una alternativa segura y moderna a las llaves tradicionales, utilizando tecnología biométrica para facilitar el acceso y mejorar la seguridad en los hogares. SmartGuard se dedica a mejorar la calidad de vida de las personas a través de la integración de soluciones inteligentes en el hogar.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="servicios" class="section__servicios">
+  <h2>Nuestros Servicios</h2>
+  <p class="section__descripcion">Descubre cómo **FaceLoock** puede mejorar la seguridad y gestión de acceso a tu hogar, tanto en dispositivos móviles como en la versión web.</p>
+
+  <div class="serviciosone__grid">
+
+    <!-- Servicio 1: Gestión de Usuarios -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Gestión de Usuarios" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">group</span>
+        <h3>Gestión de Usuarios</h3>
+        <p>Los propietarios pueden registrar y gestionar a los usuarios que tienen acceso a su hogar, asegurando una experiencia personalizada y segura.</p>
+      </div>
+    </div>
+
+    <!-- Servicio 2: Acceso y Registro Facial -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Acceso Facial" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">lock</span>
+        <h3>Acceso y Registro Facial</h3>
+        <p>Los usuarios registrados pueden acceder a la vivienda a través de reconocimiento facial, eliminando la necesidad de llaves físicas.</p>
+      </div>
+    </div>
+
+    <!-- Servicio 3: Historial de Accesos -->
+    <div class="servicio__card">
+      <img src="img/app-preview-mobile.png" alt="Historial de Accesos" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">history</span>
+        <h3>Historial de Accesos</h3>
+        <p>Los propietarios pueden consultar el historial de ingresos a su hogar, viendo detalles como hora, fecha y el usuario que ingresó.</p>
+      </div>
+    </div>
+
+    <!-- Servicio 4: Notificaciones en Tiempo Real -->
+    <div class="servicio__card">
+      <img src="img/notification-preview.png" alt="Notificaciones" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">notifications_active</span>
+        <h3>Notificaciones en Tiempo Real</h3>
+        <p>Recibe alertas inmediatas en tu celular ante intentos de acceso no autorizados o detección de rostros desconocidos.</p>
+      </div>
+    </div>
+    <!-- Servicio 5: Control Remoto -->
+    <div class="servicio__card">
+      <img src="img/remote-access.png" alt="Control Remoto" class="servicio__imagen">
+      <div class="servicio__content">
+        <span class="material-icons">phonelink_lock</span>
+        <h3>Control Remoto</h3>
+        <p>Abre la puerta de tu casa desde cualquier lugar o llama a la policía con un solo toque desde la app móvil.</p>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<section id="planes" class="section__planes">
+  <h2>Planes de Suscripción</h2>
+  <p class="section__descripcion">Elige el plan adecuado para gestionar el acceso a tu hogar mediante nuestra solución de seguridad inteligente **FaceLoock**.</p>
+
+  <div class="planes__grid">
+
+    <!-- Plan Básico para Propietarios -->
+    <div class="plan__card">
+      <h3>Plan Básico para Propietarios</h3>
+      <p>Comienza a gestionar el acceso a tu hogar con reconocimiento facial para un máximo de 5 usuarios.</p>
+      <ul>
+        <li><span class="material-icons">check</span> Registro de hasta 2 usuarios</li>
+        <li><span class="material-icons">check</span> Monitoreo</li>
+        <li><span class="material-icons">check</span> Acceso mediante reconocimiento facial</li>
+        <li><span class="material-icons">check</span> Historial de accesos básico</li>
+        <li><span class="material-icons">check</span> Soporte estándar</li>
+      </ul>
+      <p class="plan__precio">¡Gratis!</p>
+      <button class="btn">Suscribirse</button>
+    </div>
+
+    <!-- Plan Premium para Propietarios -->
+    <div class="plan__card plan__gratis">
+      <h3>Plan Premium para Propietarios</h3>
+      <p>Accede a todas las funcionalidades avanzadas para gestionar el acceso a tu hogar de forma ilimitada.</p>
+      <ul>
+        <li><span class="material-icons">check</span> Usuarios ilimitados</li>
+        <li><span class="material-icons">check</span> Monitoreo en tiempo real</li>
+        <li><span class="material-icons">check</span> Control avanzado de accesos</li>
+        <li><span class="material-icons">check</span> Notificaciones en tiempo real</li>
+        <li><span class="material-icons">check</span> Bloqueos ilimitados</li>
+      </ul>
+      <p class="plan__precio">S/. 49/mes</p>
+      <button class="btn">Suscribirse</button>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="testimonios" class="section__testimonios">
+  <h2>TESTIMONIOS</h2>
+  <p class="section__descripcion">Lo que nuestros usuarios dicen sobre **FaceLoock** y cómo ha mejorado la seguridad en sus hogares.</p>
+
+  <div class="testimoniosone__grid">
+
+    <!-- Testimonio 1 -->
+    <div class="testimonio__card">
+      <img src="img/volunter1.png" alt="Foto de Carla G." />
+      <h3>Carla G.</h3>
+      <p>"**FaceLoock** ha transformado la seguridad de mi hogar. El reconocimiento facial hace que el acceso a mi casa sea fácil y seguro, sin necesidad de llaves. ¡Una solución increíble!"</p>
+    </div>
+
+    <!-- Testimonio 2 -->
+    <div class="testimonio__card">
+      <img src="img/volunter2.jpg" alt="Foto de Lucas M." />
+      <h3>Lucas M.</h3>
+      <p>"Con **FaceLoock**, la seguridad de mi hogar nunca ha sido tan eficiente. El proceso de entrada es rápido y me siento mucho más seguro sabiendo que el acceso es controlado por tecnología avanzada."</p>
+    </div>
+
+    <!-- Testimonio 3 -->
+    <div class="testimonio__card">
+      <img src="img/volunter2.jpg" alt="Foto de Marta R." />
+      <h3>Marta R.</h3>
+      <p>"Como propietaria de una casa, **FaceLoock** me ha dado el control total sobre quién entra a mi hogar. El historial de accesos me permite saber quién y cuándo se ha registrado en la entrada. ¡Es una herramienta indispensable!"</p>
+    </div>
+
+    <!-- Testimonio 4 -->
+    <div class="testimonio__card">
+      <img src="img/volunter1.png" alt="Foto de Javier T." />
+      <h3>Javier T.</h3>
+      <p>"Gracias a **FaceLoock**, olvidé las llaves. La solución de reconocimiento facial es segura, fácil de usar y mejora la seguridad de mi familia. ¡Muy recomendable!"</p>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section id="contacto" class="section__contacto">
+  <h2>Contactanos</h2>
+  <p class="section__descripcion">¿Tienes alguna pregunta sobre **FaceLoock** o necesitas más información sobre cómo mejorar la seguridad de tu hogar? ¡Estamos aquí para ayudarte!</p>
+
+  <div class="contacto__grid">
+
+    <!-- Imagen representativa -->
+    <div class="contacto__imagen">
+      <img src="img/oficina.jpg" alt="Imagen de nuestra oficina">
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="contacto__form">
+      <form action="#" method="POST">
+        <div class="form-group">
+          <input type="text" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Correo Electrónico" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Mensaje" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer__container">
+
+    <!-- Sección 1: Información de contacto -->
+    <div class="footer__column">
+      <h4>Nuestra oficina</h4>
+      <ul>
+        <li><span class="material-icons">place</span> 123 Lima - Perú</li>
+        <li><span class="material-icons">phone</span> (+51) 900 234 323</li>
+        <li><span class="material-icons">email</span> contacto@smartguard.com</li>
+      </ul>
+      <div class="footer__social">
+        <a href="https://www.facebook.com" target="_blank"><span class="material-icons">facebook</span></a>
+        <a href="https://www.linkedin.com" target="_blank"><span class="material-icons">linkedin</span></a>
+      </div>
+    </div>
+
+    <!-- Sección 2: Servicios -->
+    <div class="footer__column">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="#">Reconocimiento Facial</a></li>
+        <li><a href="#">Gestión de Accesos</a></li>
+        <li><a href="#">Seguridad en el Hogar</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección 3: Navegación de la página -->
+    <div class="footer__column">
+      <h4>Enlaces rápidos</h4>
+      <ul>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#servicios">Nuestros Servicios</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="footer__bottom">
+    <p>© 2024 SmartGuard. Todos los derechos reservados.</p>
+    <p>Hecho con ❤️ por <a href="https://www.smartguard.com" target="_blank">SmartGuard</a></p>
+  </div>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+:root {
+    --blanco: #fff;
+    --negro: #000;
+    --neutral-c: #eb701e;
+    --gris-oscuro: #8c8c8c;
+    --grafito: #222;
+    --rojo: #3894b6;
+}
+
+/* Global */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
