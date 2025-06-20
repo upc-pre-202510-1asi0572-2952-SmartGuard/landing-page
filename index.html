@@ -67,64 +67,192 @@
 
 
 <section id="inicio" class="section__inicio">
+  <video autoplay muted loop playsinline class="video__background">
+    <source src="img/videoplayback-facelock.mp4" type="video/mp4">
+    Tu navegador no soporta videos HTML5.
+  </video>
+
   <div class="inicio__content">
     <h1>Bienvenido a FaceLoock</h1>
     <p>La solución innovadora para acceder a tu hogar de manera segura y sin contacto, utilizando tecnología de reconocimiento facial.</p>
-
-    <!-- Botones para descargar la app -->
     <div class="inicio__botones">
-      <a href="#" class="btn__descarga android">
-        <img src="img/android.png" alt="Descargar para Android">
-        Descargar para Android
-      </a>
-      <a href="#" class="btn__descarga ios">
-        <img src="img/app-store.png" alt="Descargar para iOS">
-        Descargar para iOS
-      </a>
-      <!-- Enlace para la web -->
-      <a href="https://6824e56fcf04376e4520c2b3--smartguard-web.netlify.app/login" class="btn__web">
-        Visitar la Web
+      <a href="https://smartguard-web.netlify.app" class="btn__web">
+        Ir a la Web
       </a>
     </div>
   </div>
 </section>
 
-
-
 <section id="nosotros" class="section__nosotros">
-  <h2>Sobre Nosotros</h2>
-  <p class="section__descripcion">SmartGuard es una startup innovadora dedicada a crear soluciones de seguridad inteligente mediante tecnología avanzada, proporcionando una forma moderna y segura de acceder a tu hogar.</p>
+  <div class="container">
+    <h2 class="section__title">Sobre Nosotros</h2>
+    <p class="section__descripcion">
+      SmartGuard es una startup innovadora dedicada a crear soluciones de seguridad inteligente mediante tecnología avanzada, proporcionando una forma moderna y segura de acceder a tu hogar.
+    </p>
 
-  <div class="nosotros__grid">
+    <div class="nosotros__grid">
+      <!-- Imágenes del lado izquierdo -->
+      <div class="nosotros__imagenes">
+        <div class="imagen__container">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=300&fit=crop" alt="Equipo SmartGuard" class="nosotros__imagen">
+          <div class="imagen__overlay">
+            <span>Nuestro Equipo</span>
+          </div>
+        </div>
+        <div class="imagen__container">
+          <img src="img/img5.png" alt="Tecnología de Reconocimiento Facial" class="nosotros__imagen">
+          <div class="imagen__overlay">
+            <span>Tecnología Avanzada</span>
+          </div>
+        </div>
+      </div>
 
-    <!-- Imágenes del lado izquierdo -->
-    <div class="nosotros__imagenes">
-      <img src="img/nosotros-img2.jpg" alt="Equipo SmartGuard" class="nosotros__imagen">
-      <img src="img/nosotros-img1.jpg" alt="Tecnología de Reconocimiento Facial" class="nosotros__imagen">
+      <!-- Contenido del lado derecho -->
+      <div class="nosotros__contenido">
+        <!-- Tabs dinámicos -->
+        <div class="tabs__container">
+          <input type="radio" id="tab-historia" name="tabs" checked>
+          <input type="radio" id="tab-mision" name="tabs">
+          <input type="radio" id="tab-multimedia" name="tabs">
+
+          <div class="tabs__nav">
+            <label for="tab-historia" class="tab__label">
+              Nuestra Historia
+            </label>
+            <label for="tab-mision" class="tab__label">
+              Nuestra Misión
+            </label>
+            <label for="tab-multimedia" class="tab__label">
+              Multimedia
+            </label>
+          </div>
+
+          <div class="tabs__content">
+            <!-- Tab Historia -->
+            <div class="tab__panel" id="panel-historia">
+              <div class="content__card">
+                <h3>Nuestra Historia</h3>
+                <p>SmartGuard nació con el objetivo de transformar la seguridad residencial, utilizando tecnología de reconocimiento facial avanzada para proporcionar acceso sin contacto a los hogares.</p>
+                <p>Fundada por un grupo de estudiantes comprometidos con la innovación y la seguridad, SmartGuard busca ofrecer soluciones accesibles, seguras y fáciles de usar.</p>
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                      <h4>Mar - 2025</h4>
+                      <p>Fundación de SmartGuard</p>
+                    </div>
+                  </div>
+                  <div class="timeline__item">
+                    <div class="timeline__marker"></div>
+                    <div class="timeline__content">
+                      <h4>Jun - 2025</h4>
+                      <p>Primer prototipo funcional</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Misión -->
+            <div class="tab__panel" id="panel-mision">
+              <div class="content__card">
+                <h3>Nuestra Misión</h3>
+                <p>Brindar a los propietarios de viviendas una alternativa segura y moderna a las llaves tradicionales, utilizando tecnología biométrica para facilitar el acceso y mejorar la seguridad en los hogares.</p>
+                <p>SmartGuard se dedica a mejorar la calidad de vida de las personas a través de la integración de soluciones inteligentes en el hogar.</p>
+                <div class="valores">
+                  <div class="valor__item">
+                    <div class="valor__icon">🔒</div>
+                    <h4>Seguridad</h4>
+                    <p>Protección avanzada para tu hogar</p>
+                  </div>
+                  <div class="valor__item">
+                    <div class="valor__icon">💡</div>
+                    <h4>Innovación</h4>
+                    <p>Tecnología de vanguardia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Multimedia -->
+            <div class="tab__panel" id="panel-multimedia">
+              <div class="content__card">
+                <h3>Conoce más sobre SmartGuard</h3>
+
+                <!-- Desplegable de Video -->
+                <div class="multimedia__section">
+                  <input type="checkbox" id="video-toggle" class="toggle__input">
+                  <label for="video-toggle" class="toggle__label">
+                    <span class="toggle__text">About The Product</span>
+                    <span class="toggle__arrow">▼</span>
+                  </label>
+                  <div class="toggle__content">
+                    <div class="video__container">
+                      <video controls poster="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=400&fit=crop">
+                        <source src="#" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                      </video>
+                      <p class="video__description">Descubre cómo SmartGuard está revolucionando la seguridad del hogar</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Desplegable de Galería -->
+                <div class="multimedia__section">
+                  <input type="checkbox" id="gallery-toggle" class="toggle__input">
+                  <label for="gallery-toggle" class="toggle__label">
+                    <span class="toggle__text">Ver Galería de Fotos</span>
+                    <span class="toggle__arrow">▼</span>
+                  </label>
+                  <div class="toggle__content">
+                    <div class="gallery__container">
+                      <div class="gallery__grid">
+                        <div class="gallery__item">
+                          <img src="img/img1.png" alt="Producto SmartGuard">
+                          <div class="gallery__overlay">
+                            <span>Sistema con integración IoT</span>
+                          </div>
+                        </div>
+                        <div class="gallery__item">
+                          <img src="img/img2.png" alt="Integración con Simulador Wokwi">
+                          <div class="gallery__overlay">
+                            <span>Simulador Wokwi</span>
+                          </div>
+                        </div>
+                        <div class="gallery__item">
+                          <img src="img/img3.png" alt="Operativo en Dispositivos Móviles">
+                          <div class="gallery__overlay">
+                            <span>Aplicación Móvil</span>
+                          </div>
+                        </div>
+                        <div class="gallery__item">
+                          <img src="img/img4.png" alt="Agendar Acceso">
+                          <div class="gallery__overlay">
+                            <span>Registro de Acceso</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Texto del lado derecho -->
-    <div class="nosotros__texto">
-      <h3>Nuestra Historia</h3>
-      <p>SmartGuard nació con el objetivo de transformar la seguridad residencial, utilizando tecnología de reconocimiento facial avanzada para proporcionar acceso sin contacto a los hogares. Fundada por un grupo de estudiantes comprometidos con la innovación y la seguridad, SmartGuard busca ofrecer soluciones accesibles, seguras y fáciles de usar.</p>
-
-      <h3>Nuestra Misión</h3>
-      <p>Brindar a los propietarios de viviendas una alternativa segura y moderna a las llaves tradicionales, utilizando tecnología biométrica para facilitar el acceso y mejorar la seguridad en los hogares. SmartGuard se dedica a mejorar la calidad de vida de las personas a través de la integración de soluciones inteligentes en el hogar.</p>
-    </div>
-
   </div>
 </section>
 
 
 <section id="servicios" class="section__servicios">
   <h2>Nuestros Servicios</h2>
-  <p class="section__descripcion">Descubre cómo **FaceLoock** puede mejorar la seguridad y gestión de acceso a tu hogar, tanto en dispositivos móviles como en la versión web.</p>
+  <p class="section__descripcion">Descubre cómo FaceLoock puede mejorar la seguridad y gestión de acceso a tu hogar, tanto en dispositivos móviles como en la versión web.</p>
 
   <div class="serviciosone__grid">
 
     <!-- Servicio 1: Gestión de Usuarios -->
     <div class="servicio__card">
-      <img src="img/app-preview-mobile.png" alt="Gestión de Usuarios" class="servicio__imagen">
       <div class="servicio__content">
         <span class="material-icons">group</span>
         <h3>Gestión de Usuarios</h3>
@@ -134,7 +262,6 @@
 
     <!-- Servicio 2: Acceso y Registro Facial -->
     <div class="servicio__card">
-      <img src="img/app-preview-mobile.png" alt="Acceso Facial" class="servicio__imagen">
       <div class="servicio__content">
         <span class="material-icons">lock</span>
         <h3>Acceso y Registro Facial</h3>
@@ -144,7 +271,6 @@
 
     <!-- Servicio 3: Historial de Accesos -->
     <div class="servicio__card">
-      <img src="img/app-preview-mobile.png" alt="Historial de Accesos" class="servicio__imagen">
       <div class="servicio__content">
         <span class="material-icons">history</span>
         <h3>Historial de Accesos</h3>
@@ -154,7 +280,6 @@
 
     <!-- Servicio 4: Notificaciones en Tiempo Real -->
     <div class="servicio__card">
-      <img src="img/notification-preview.png" alt="Notificaciones" class="servicio__imagen">
       <div class="servicio__content">
         <span class="material-icons">notifications_active</span>
         <h3>Notificaciones en Tiempo Real</h3>
@@ -163,14 +288,20 @@
     </div>
     <!-- Servicio 5: Control Remoto -->
     <div class="servicio__card">
-      <img src="img/remote-access.png" alt="Control Remoto" class="servicio__imagen">
       <div class="servicio__content">
         <span class="material-icons">phonelink_lock</span>
         <h3>Control Remoto</h3>
         <p>Abre la puerta de tu casa desde cualquier lugar o llama a la policía con un solo toque desde la app móvil.</p>
       </div>
     </div>
-
+    <!-- Servicio 6: Reconocimiento de Visitantes -->
+    <div class="servicio__card">
+      <div class="servicio__content">
+        <span class="material-icons">face</span>
+        <h3>Reconocimiento de Visitantes</h3>
+        <p>El sistema identifica rostros conocidos como familiares o amigos frecuentes y optimiza el acceso para brindar una experiencia más rápida y personalizada.</p>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -178,7 +309,7 @@
 
 <section id="planes" class="section__planes">
   <h2>Planes de Suscripción</h2>
-  <p class="section__descripcion">Elige el plan adecuado para gestionar el acceso a tu hogar mediante nuestra solución de seguridad inteligente **FaceLoock**.</p>
+  <p class="section__descripcion">Elige el plan adecuado para gestionar el acceso a tu hogar mediante nuestra solución de seguridad inteligente FaceLoock.</p>
 
   <div class="planes__grid">
 
@@ -188,8 +319,8 @@
       <p>Comienza a gestionar el acceso a tu hogar con reconocimiento facial para un máximo de 5 usuarios.</p>
       <ul>
         <li><span class="material-icons">check</span> Registro de hasta 2 usuarios</li>
-        <li><span class="material-icons">check</span> Monitoreo</li>
-        <li><span class="material-icons">check</span> Acceso mediante reconocimiento facial</li>
+        <li><span class="material-icons">check</span> Reporte de accesos semanales</li>
+        <li><span class="material-icons">check</span> Acceso mediante biometría básica</li>
         <li><span class="material-icons">check</span> Historial de accesos básico</li>
         <li><span class="material-icons">check</span> Soporte estándar</li>
       </ul>
@@ -204,9 +335,11 @@
       <ul>
         <li><span class="material-icons">check</span> Usuarios ilimitados</li>
         <li><span class="material-icons">check</span> Monitoreo en tiempo real</li>
-        <li><span class="material-icons">check</span> Control avanzado de accesos</li>
+        <li><span class="material-icons">check</span> Motor biométrico avanzado</li>
         <li><span class="material-icons">check</span> Notificaciones en tiempo real</li>
+        <li><span class="material-icons">check</span> Historial de accesos detallados</li>
         <li><span class="material-icons">check</span> Bloqueos ilimitados</li>
+        <li><span class="material-icons">check</span> Soporte asistido las 24 horas</li>
       </ul>
       <p class="plan__precio">S/. 49/mes</p>
       <button class="btn">Suscribirse</button>
@@ -220,7 +353,7 @@
 
 <section id="testimonios" class="section__testimonios">
   <h2>TESTIMONIOS</h2>
-  <p class="section__descripcion">Lo que nuestros usuarios dicen sobre **FaceLoock** y cómo ha mejorado la seguridad en sus hogares.</p>
+  <p class="section__descripcion">Lo que nuestros usuarios dicen sobre nuestro sistema y cómo ha mejorado la seguridad en sus hogares.</p>
 
   <div class="testimoniosone__grid">
 
@@ -228,28 +361,28 @@
     <div class="testimonio__card">
       <img src="img/volunter1.png" alt="Foto de Carla G." />
       <h3>Carla G.</h3>
-      <p>"**FaceLoock** ha transformado la seguridad de mi hogar. El reconocimiento facial hace que el acceso a mi casa sea fácil y seguro, sin necesidad de llaves. ¡Una solución increíble!"</p>
+      <p>"FaceLoock ha transformado la seguridad de mi hogar. El reconocimiento facial hace que el acceso a mi casa sea fácil y seguro, sin necesidad de llaves. ¡Una solución increíble!"</p>
     </div>
 
     <!-- Testimonio 2 -->
     <div class="testimonio__card">
       <img src="img/volunter2.jpg" alt="Foto de Lucas M." />
       <h3>Lucas M.</h3>
-      <p>"Con **FaceLoock**, la seguridad de mi hogar nunca ha sido tan eficiente. El proceso de entrada es rápido y me siento mucho más seguro sabiendo que el acceso es controlado por tecnología avanzada."</p>
+      <p>"Con FaceLoock, la seguridad de mi hogar nunca ha sido tan eficiente. El proceso de entrada es rápido y me siento mucho más seguro sabiendo que el acceso es controlado por tecnología avanzada."</p>
     </div>
 
     <!-- Testimonio 3 -->
     <div class="testimonio__card">
       <img src="img/volunter2.jpg" alt="Foto de Marta R." />
       <h3>Marta R.</h3>
-      <p>"Como propietaria de una casa, **FaceLoock** me ha dado el control total sobre quién entra a mi hogar. El historial de accesos me permite saber quién y cuándo se ha registrado en la entrada. ¡Es una herramienta indispensable!"</p>
+      <p>"Como propietaria de una casa, FaceLoock me ha dado el control total sobre quién entra a mi hogar. El historial de accesos me permite saber quién y cuándo se ha registrado en la entrada. ¡Es una herramienta indispensable!"</p>
     </div>
 
     <!-- Testimonio 4 -->
     <div class="testimonio__card">
       <img src="img/volunter1.png" alt="Foto de Javier T." />
       <h3>Javier T.</h3>
-      <p>"Gracias a **FaceLoock**, olvidé las llaves. La solución de reconocimiento facial es segura, fácil de usar y mejora la seguridad de mi familia. ¡Muy recomendable!"</p>
+      <p>"Gracias a FaceLoock, olvidé las llaves. La solución de reconocimiento facial es segura, fácil de usar y mejora la seguridad de mi familia. ¡Muy recomendable!"</p>
     </div>
 
   </div>
@@ -259,14 +392,14 @@
 
 
 <section id="contacto" class="section__contacto">
-  <h2>Contactanos</h2>
-  <p class="section__descripcion">¿Tienes alguna pregunta sobre **FaceLoock** o necesitas más información sobre cómo mejorar la seguridad de tu hogar? ¡Estamos aquí para ayudarte!</p>
+  <h2>Contáctanos</h2>
+  <p class="section__descripcion">¿Tienes alguna pregunta sobre el sistema o necesitas más información sobre cómo mejorar la seguridad de tu hogar? <br> ¡Estamos aquí para ayudarte!</p>
 
   <div class="contacto__grid">
 
     <!-- Imagen representativa -->
     <div class="contacto__imagen">
-      <img src="img/oficina.jpg" alt="Imagen de nuestra oficina">
+      <img src="img/demo.png" alt="Imagen de nuestra oficina">
     </div>
 
     <!-- Formulario de contacto -->
@@ -336,6 +469,38 @@
     <p>Hecho con ❤️ por <a href="https://www.smartguard.com" target="_blank">SmartGuard</a></p>
   </div>
 </footer>
+
+<div id="modal" class="modal">
+  <span class="modal__close">&times;</span>
+  <img class="modal__img" id="modal-img">
+  <div class="modal__caption" id="modal-caption"></div>
+</div>
+
+<script>
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+  const captionText = document.getElementById("modal-caption");
+  const closeBtn = document.querySelector(".modal__close");
+
+  document.querySelectorAll(".gallery__item img").forEach(img => {
+    img.addEventListener("click", function () {
+      modal.style.display = "flex"; //  flex para centrar
+      modalImg.src = this.src;
+      captionText.innerText = this.alt;
+    });
+  });
+
+  closeBtn.onclick = function () {
+    modal.style.display = "none";
+  }
+
+  // Cerrar si se hace clic fuera de la imagen
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 
