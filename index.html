@@ -392,13 +392,11 @@
 
 
 
-
 <section id="contacto" class="section__contacto">
   <h2>Contáctanos</h2>
   <p class="section__descripcion">¿Tienes alguna pregunta sobre el sistema o necesitas más información sobre cómo mejorar la seguridad de tu hogar? <br> ¡Estamos aquí para ayudarte!</p>
 
   <div class="contacto__grid">
-
     <!-- Imagen representativa -->
     <div class="contacto__imagen">
       <img src="img/demo.png" alt="Imagen de nuestra oficina">
@@ -406,22 +404,27 @@
 
     <!-- Formulario de contacto -->
     <div class="contacto__form">
-      <form action="#" method="POST">
+      <form action="https://formsubmit.co/u20181h198@upc.edu.pe" method="POST">
+        <!-- Opcional: Evitar spam -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Opcional: Redireccionar al enviar -->
+        <input type="hidden" name="_next" value="https://upc-pre-202510-1asi0572-2952-smartguard.github.io/landing-page/#contacto">
+
         <div class="form-group">
-          <input type="text" placeholder="Nombre" required>
+          <input type="text" name="nombre" placeholder="Nombre" required>
         </div>
         <div class="form-group">
-          <input type="email" placeholder="Correo Electrónico" required>
+          <input type="email" name="correo" placeholder="Correo Electrónico" required>
         </div>
         <div class="form-group">
-          <textarea placeholder="Mensaje" rows="5" required></textarea>
+          <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
         </div>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
-
   </div>
 </section>
+
 
 
 
